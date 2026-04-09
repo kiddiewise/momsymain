@@ -20,6 +20,10 @@
     --content-space: clamp(1.25rem, 2vw, 2rem);
     --header-height: 5.25rem;
     --focus-ring: 0 0 0 3px rgba(212, 196, 255, 0.22);
+    --particles-image: url("https://momsy.com.tr/wp-content/uploads/2026/04/particles-170bd1fd231f4669.png");
+    --scroll-shift: 0px;
+    --scroll-shift-strong: 0px;
+    --scroll-rotate: 0deg;
 }
 
 * {
@@ -35,7 +39,11 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at top, rgba(143, 118, 255, 0.14), transparent 34%), var(--bg);
+    background:
+        radial-gradient(circle at top, rgba(143, 118, 255, 0.14), transparent 34%),
+        radial-gradient(circle at 50% 0%, rgba(108, 92, 255, 0.08), transparent 22%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 22%),
+        var(--bg);
     color: var(--text);
     line-height: 1.6;
     text-rendering: optimizeLegibility;
@@ -288,9 +296,11 @@ section[id] {
 
 .section--hero::before {
     background:
-        radial-gradient(circle at 15% 18%, rgba(221, 194, 255, 0.16), transparent 24%),
-        radial-gradient(circle at 84% 20%, rgba(143, 118, 255, 0.14), transparent 28%),
+        radial-gradient(circle at 15% 18%, rgba(221, 194, 255, 0.18), transparent 24%),
+        radial-gradient(circle at 84% 20%, rgba(143, 118, 255, 0.2), transparent 30%),
+        radial-gradient(circle at 70% 36%, rgba(255, 255, 255, 0.08), transparent 18%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 55%);
+    transform: translateY(calc(var(--scroll-shift) * -0.2));
 }
 
 .section--hero::after {
@@ -492,8 +502,9 @@ section[id] {
     pointer-events: none;
     background:
         radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.035), transparent 24%),
-        radial-gradient(circle at 82% 70%, rgba(212, 196, 255, 0.08), transparent 28%);
+        radial-gradient(circle at 82% 70%, rgba(212, 196, 255, 0.12), transparent 28%);
     opacity: 0.9;
+    transform: translateY(calc(var(--scroll-shift) * -0.18));
 }
 
 .story-layout {
@@ -598,6 +609,21 @@ section[id] {
     isolation: isolate;
 }
 
+.story-visual::before {
+    content: "";
+    position: absolute;
+    inset: 10% 8% 14%;
+    z-index: 0;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(123, 108, 255, 0.34), transparent 54%),
+        radial-gradient(circle at 52% 44%, rgba(255, 255, 255, 0.1), transparent 22%);
+    filter: blur(34px);
+    opacity: 0.88;
+    transform: translateY(calc(var(--scroll-shift) * -0.35));
+    animation: ambientPulse 10s ease-in-out infinite;
+}
+
 .story-device-stage {
     position: relative;
     width: min(100%, 29rem);
@@ -609,8 +635,27 @@ section[id] {
     position: absolute;
     inset: 10% 12% 20%;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(208, 190, 255, 0.24), transparent 70%);
+    background:
+        radial-gradient(circle, rgba(208, 190, 255, 0.28), transparent 70%),
+        radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 0.12), transparent 20%);
     filter: blur(28px);
+    transform: translate3d(0, calc(var(--scroll-shift) * -0.4), 0);
+}
+
+.story-device-stage::after {
+    content: "";
+    position: absolute;
+    inset: -12% -10% -6%;
+    z-index: 0;
+    background-image: var(--particles-image);
+    background-repeat: no-repeat;
+    background-position: center 14%;
+    background-size: min(120%, 30rem);
+    opacity: 0.48;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 24px rgba(154, 128, 255, 0.14));
+    transform: translate3d(0, calc(var(--scroll-shift-strong) * -0.4), 0) rotate(calc(var(--scroll-rotate) * -1));
+    animation: particleFloat 13s ease-in-out infinite reverse;
 }
 
 .story-device-shell {
@@ -729,7 +774,8 @@ section[id] {
     pointer-events: none;
     background:
         radial-gradient(circle at 20% 22%, rgba(255, 255, 255, 0.03), transparent 22%),
-        radial-gradient(circle at 80% 28%, rgba(212, 196, 255, 0.08), transparent 30%);
+        radial-gradient(circle at 80% 28%, rgba(212, 196, 255, 0.1), transparent 30%);
+    transform: translateY(calc(var(--scroll-shift) * -0.16));
 }
 
 .experts-trust {
@@ -911,6 +957,7 @@ section[id] {
     background:
         radial-gradient(circle at 50% 0%, rgba(212, 196, 255, 0.14), transparent 38%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 45%);
+    transform: translateY(calc(var(--scroll-shift) * -0.14));
 }
 
 .final-cta {
@@ -1179,6 +1226,21 @@ section[id] {
     isolation: isolate;
 }
 
+.hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: 8% 6% 10%;
+    z-index: 0;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(142, 118, 255, 0.42), transparent 52%),
+        radial-gradient(circle at 60% 40%, rgba(255, 244, 255, 0.14), transparent 24%);
+    filter: blur(42px);
+    opacity: 0.9;
+    transform: translateY(calc(var(--scroll-shift) * -0.45));
+    animation: ambientPulse 8s ease-in-out infinite;
+}
+
 .hero-device-stage {
     position: relative;
     width: min(100%, 26rem);
@@ -1190,12 +1252,32 @@ section[id] {
     position: absolute;
     inset: 8% 8% 16%;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(214, 190, 255, 0.25), transparent 68%);
-    filter: blur(22px);
+    background:
+        radial-gradient(circle, rgba(214, 190, 255, 0.34), transparent 66%),
+        radial-gradient(circle at 52% 42%, rgba(255, 255, 255, 0.12), transparent 20%);
+    filter: blur(26px);
+    transform: translate3d(0, calc(var(--scroll-shift) * -0.6), 0);
+}
+
+.hero-device-stage::after {
+    content: "";
+    position: absolute;
+    inset: -10% -8% -4%;
+    z-index: 0;
+    background-image: var(--particles-image);
+    background-repeat: no-repeat;
+    background-position: center 18%;
+    background-size: min(120%, 32rem);
+    opacity: 0.62;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 30px rgba(154, 128, 255, 0.18));
+    transform: translate3d(0, calc(var(--scroll-shift-strong) * -0.6), 0) rotate(var(--scroll-rotate));
+    animation: particleFloat 12s ease-in-out infinite;
 }
 
 .hero-device-shell {
     position: relative;
+    z-index: 1;
     width: min(100%, 22rem);
     margin: 0 auto;
     padding: 0.85rem;
@@ -1318,6 +1400,32 @@ section[id] {
     padding: 2rem 0;
 }
 
+@keyframes ambientPulse {
+    0%,
+    100% {
+        opacity: 0.72;
+        transform: translateY(calc(var(--scroll-shift) * -0.3)) scale(0.98);
+    }
+
+    50% {
+        opacity: 0.98;
+        transform: translateY(calc(var(--scroll-shift) * -0.5)) scale(1.02);
+    }
+}
+
+@keyframes particleFloat {
+    0%,
+    100% {
+        opacity: 0.42;
+        transform: translate3d(0, calc(var(--scroll-shift-strong) * -0.36), 0) scale(0.98) rotate(var(--scroll-rotate));
+    }
+
+    50% {
+        opacity: 0.68;
+        transform: translate3d(0, calc((var(--scroll-shift-strong) * -0.55) - 8px), 0) scale(1.03) rotate(calc(var(--scroll-rotate) * -1));
+    }
+}
+
 @media (hover: none) {
     .feature-card:hover,
     .expert-card:hover,
@@ -1356,6 +1464,12 @@ section[id] {
     .hero-device-stage::before,
     .story-device-stage::before {
         filter: blur(18px);
+    }
+
+    .hero-device-stage::after,
+    .story-device-stage::after {
+        opacity: 0.44;
+        background-size: min(115%, 26rem);
     }
 
     .hero-floating-card--community {
@@ -1518,6 +1632,12 @@ section[id] {
         padding: 1.5rem 0 2.8rem;
     }
 
+    .story-visual::before,
+    .hero-visual::before {
+        inset: 12% 4% 16%;
+        filter: blur(28px);
+    }
+
     .story-device-shell {
         width: min(100%, 19rem);
     }
@@ -1598,6 +1718,14 @@ section[id] {
         padding: 1rem 0 2.5rem;
     }
 
+    .hero-device-stage::after,
+    .story-device-stage::after {
+        opacity: 0.34;
+        background-position: center 20%;
+        background-size: min(120%, 22rem);
+        animation-duration: 16s;
+    }
+
     .hero-device-shell {
         width: min(100%, 19rem);
     }
@@ -1640,6 +1768,10 @@ section[id] {
 
     .hero-device-stage::before,
     .story-device-stage::before,
+    .hero-device-stage::after,
+    .story-device-stage::after,
+    .hero-visual::before,
+    .story-visual::before,
     .section--hero::before,
     .section--story::before,
     .section--experts-trust::before,
