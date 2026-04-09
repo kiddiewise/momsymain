@@ -20,6 +20,7 @@ if (!function_exists('momsymain_default_menu')) {
             . '<li><a href="#hero">Anasayfa</a></li>'
             . '<li><a href="#features">Özellikler</a></li>'
             . '<li><a href="#community">Topluluk</a></li>'
+            . '<li><a href="#tracking">Gebelik Takibi</a></li>'
             . '<li><a href="#ai-assistant">Momsy Asistan</a></li>'
             . '<li><a href="#download">İndir</a></li>'
             . '</ul>';
