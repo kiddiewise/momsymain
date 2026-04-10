@@ -62,17 +62,12 @@ $hero_highlights = array(
 
         <div class="hero-visual">
             <div class="hero-device-stage">
-                <div class="hero-device-shell">
-                    <div class="hero-device">
-                        <span class="hero-device-notch" aria-hidden="true"></span>
-                        <img
-                            class="hero-device-image"
-                            src="<?php echo esc_url($hero_mockup_url); ?>"
-                            alt="Momsy uygulama ekranları için örnek görsel"
-                            loading="eager"
-                        >
-                    </div>
-                </div>
+                <img
+                    class="hero-device-image"
+                    src="<?php echo esc_url($hero_mockup_url); ?>"
+                    alt="Momsy uygulama ekranları için örnek görsel"
+                    loading="eager"
+                >
                 <p class="hero-visual-caption">Gerçek ekran görüntülerin geldiğinde bu alan tek görsel URL&apos;i ile kolayca değiştirilebilir.</p>
             </div>
 

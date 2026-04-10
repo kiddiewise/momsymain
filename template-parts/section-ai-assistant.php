@@ -28,16 +28,12 @@ $assistant_benefits = array(
     <div class="container section__inner story-layout">
         <div class="story-visual">
             <div class="story-device-stage">
-                <div class="story-device-shell">
-                    <div class="story-device">
-                        <img
-                            class="story-device-image"
-                            src="<?php echo esc_url($assistant_mockup_url); ?>"
-                            alt="Momsy Asistan deneyimi için örnek ekran"
-                            loading="lazy"
-                        >
-                    </div>
-                </div>
+                <img
+                    class="story-device-image"
+                    src="<?php echo esc_url($assistant_mockup_url); ?>"
+                    alt="Momsy Asistan deneyimi için örnek ekran"
+                    loading="lazy"
+                >
 
                 <article class="story-floating-card story-floating-card--top">
                     <span class="story-floating-card__icon" aria-hidden="true"><i class="fa-solid fa-sparkles"></i></span>

@@ -51,16 +51,12 @@ $tracking_benefits = array(
 
         <div class="story-visual">
             <div class="story-device-stage">
-                <div class="story-device-shell">
-                    <div class="story-device">
-                        <img
-                            class="story-device-image"
-                            src="<?php echo esc_url($tracking_mockup_url); ?>"
-                            alt="Gebelik takibi deneyimi için örnek ekran"
-                            loading="lazy"
-                        >
-                    </div>
-                </div>
+                <img
+                    class="story-device-image"
+                    src="<?php echo esc_url($tracking_mockup_url); ?>"
+                    alt="Gebelik takibi deneyimi için örnek ekran"
+                    loading="lazy"
+                >
 
                 <article class="story-floating-card story-floating-card--top story-floating-card--accent">
                     <span class="story-floating-card__icon" aria-hidden="true"><i class="fa-solid fa-baby"></i></span>
