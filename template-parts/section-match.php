@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Replace this placeholder image with your real partner tracking screen later.
-$match_mockup_url = 'https://placehold.co/900x1600/1f1b26/f7f1ff?text=Partner+Tracking';
+// Replace this mockup image with a newer partner tracking asset when ready.
+$match_mockup_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/Adsiz-tasarim.png';
 
 $match_benefits = array(
     array(

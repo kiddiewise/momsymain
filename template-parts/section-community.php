@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Replace this placeholder image with your real community screen later.
-$community_mockup_url = 'https://placehold.co/900x1600/1f1b26/f6f1ff?text=Community+Feed';
+// Replace this mockup image with a newer community asset when ready.
+$community_mockup_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/Adsiz-tasarim.png';
 
 $community_benefits = array(
     array(

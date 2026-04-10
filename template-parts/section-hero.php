@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Replace this remote placeholder with your real app screenshot when ready.
-$hero_mockup_url = 'https://placehold.co/390x844/f3ecff/655b79?text=Momsy+Screen';
+// Replace this remote mockup with a newer asset when ready.
+$hero_mockup_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/Adsiz-tasarim.png';
 
 $hero_highlights = array(
     array(

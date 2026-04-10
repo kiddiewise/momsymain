@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Replace this placeholder image with your real pregnancy tracking screen later.
-$tracking_mockup_url = 'https://placehold.co/900x1600/1d1924/f4effd?text=Pregnancy+Tracking';
+// Replace this mockup image with a newer pregnancy tracking asset when ready.
+$tracking_mockup_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/Adsiz-tasarim.png';
 
 $tracking_benefits = array(
     array(

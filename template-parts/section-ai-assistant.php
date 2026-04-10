@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Replace this placeholder image with your real AI assistant screen later.
-$assistant_mockup_url = 'https://placehold.co/900x1600/1e1a25/f6f0ff?text=Momsy+Assistant';
+// Replace this mockup image with a newer AI assistant asset when ready.
+$assistant_mockup_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/Adsiz-tasarim.png';
 
 $assistant_benefits = array(
     array(
