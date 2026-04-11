@@ -23,33 +23,19 @@ $hero_metrics = array(
 <section id="hero" class="section section--hero" aria-labelledby="hero-heading">
     <div class="container hero-grid">
         <div class="hero-copy" data-reveal="up">
-            <span class="section-kicker section-kicker--hero">
-                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
-                2026 mobile app landing deneyimi
-            </span>
-            <h1 id="hero-heading" class="hero-title">Anne yolculuğunu tek uygulamada düzenleyen, sakinleştiren ve gerçekten indirilesi hissettiren bir deneyim.</h1>
-            <p class="hero-description">Momsy; anne ve anne adayları için topluluk akışını, gebelik takibini, AI destekli rehberliği ve partner senkronunu zarif bir teknoloji katmanında birleştirir. Daha feminen, daha sıcak ve daha düzenli bir ön yüz deneyimi burada başlar.</p>
-
-            <div class="hero-actions">
-                <a class="button button--primary" href="#download" aria-label="Google Play ve App Store bağlantılarına git">
-                    <span>Uygulamayı indir</span>
-                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </a>
-                <a class="button button--ghost" href="#features">
-                    <span>Özellikleri keşfet</span>
-                </a>
-            </div>
+            <h1 id="hero-heading" class="hero-title">Sizi tam olarak anlayan uygulama</h1>
+            <p class="hero-description">Momsy, hamilelik ve annelik yolculuklarınızda asla yalnız hissetmemeniz için tasarlandı. &#x1F49C;</p>
 
             <div class="hero-store-row" data-reveal="up">
-                <a class="store-badge store-badge--filled" href="#download" aria-label="Google Play'den indir">
+                <a class="store-badge store-badge--hero" href="#download" aria-label="Google Play'den indir">
                     <i class="fa-brands fa-google-play" aria-hidden="true"></i>
                     <span class="store-badge__content">
                         <span class="store-badge__eyebrow">Şimdi indir</span>
                         <span class="store-badge__label">Google Play</span>
                     </span>
                 </a>
-                <a class="store-badge" href="#download" aria-label="App Store'dan indir">
-                    <i class="fa-brands fa-app-store-ios" aria-hidden="true"></i>
+                <a class="store-badge store-badge--hero" href="#download" aria-label="App Store'dan indir">
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
                     <span class="store-badge__content">
                         <span class="store-badge__eyebrow">Şimdi indir</span>
                         <span class="store-badge__label">App Store</span>
