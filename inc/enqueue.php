@@ -15,16 +15,9 @@ add_action('wp_enqueue_scripts', function () {
     );
 
     wp_enqueue_style(
-        'momsymain-fontawesome',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css',
-        array(),
-        '6.5.4'
-    );
-
-    wp_enqueue_style(
         'momsymain-style',
         get_template_directory_uri() . '/assets/css/main.css',
-        array('momsymain-google-fonts', 'momsymain-fontawesome'),
+        array('momsymain-google-fonts'),
         file_exists($main_css_path) ? filemtime($main_css_path) : '1.0.0'
     );
 

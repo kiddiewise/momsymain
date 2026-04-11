@@ -28,14 +28,14 @@ $hero_metrics = array(
 
             <div class="hero-store-row" data-reveal="up">
                 <a class="store-badge store-badge--hero" href="#download" aria-label="Google Play'den indir">
-                    <i class="fa-brands fa-google-play" aria-hidden="true"></i>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6,3 20,12 6,21 6,3"/></svg>
                     <span class="store-badge__content">
                         <span class="store-badge__eyebrow">Şimdi indir</span>
                         <span class="store-badge__label">Google Play</span>
                     </span>
                 </a>
                 <a class="store-badge store-badge--hero" href="#download" aria-label="App Store'dan indir">
-                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12 0-1-.5-2-1-2s-1 .5-2 1c-1 1-2 1-4 1s-3-.5-4-1c-1-.5-2-.5-3 0s-1.5.5-2 1c-.5.5-1 1-1 2 0 4 3 11 6 11Z"/><path d="M12 11c0-1 .5-2 1-2s1 .5 2 1c1 1 2 1 4 1"/><path d="M14 5c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2Z"/><path d="M12 22c-1.5 0-2.75-1.06-4-1.06"/></svg>
                     <span class="store-badge__content">
                         <span class="store-badge__eyebrow">Şimdi indir</span>
                         <span class="store-badge__label">App Store</span>
