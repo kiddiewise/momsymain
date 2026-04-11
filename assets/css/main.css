@@ -584,6 +584,48 @@ ul {
     animation: pulseSoft 10s ease-in-out infinite;
 }
 
+.hero-stage--image {
+    min-height: clamp(28rem, 62vw, 44rem);
+}
+
+.hero-image-glow {
+    position: absolute;
+    inset: 10% 8% 12%;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(142, 120, 255, 0.38), transparent 44%),
+        radial-gradient(circle at 68% 24%, rgba(255, 130, 201, 0.22), transparent 24%),
+        radial-gradient(circle at 34% 82%, rgba(118, 242, 211, 0.14), transparent 20%);
+    filter: blur(56px);
+    opacity: 0.95;
+    transform: translateY(calc(var(--scroll-shift) * -0.3));
+}
+
+.hero-image-frame {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 25rem);
+    margin: 0;
+    padding: 0.8rem;
+    border-radius: 2.5rem;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06)),
+        rgba(10, 11, 23, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2rem;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+        0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
 .app-shell {
     position: relative;
     z-index: 1;
@@ -1462,8 +1504,18 @@ ul {
         width: 100%;
     }
 
-    .app-shell__screen {
-        min-height: 32rem;
+    .hero-stage--image {
+        min-height: auto;
+    }
+
+    .hero-image-frame {
+        width: min(100%, 20rem);
+        padding: 0.65rem;
+        border-radius: 2rem;
+    }
+
+    .hero-image {
+        border-radius: 1.55rem;
     }
 
     .suggestion-grid {

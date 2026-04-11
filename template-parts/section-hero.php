@@ -3,26 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-$hero_highlights = array(
-    array(
-        'modifier' => 'community',
-        'icon' => 'fa-solid fa-heart-pulse',
-        'title' => 'Günlük ritim',
-        'text' => 'Semptom, enerji ve ruh halini tek bakışta izle.',
-    ),
-    array(
-        'modifier' => 'tracking',
-        'icon' => 'fa-solid fa-users',
-        'title' => 'Sıcak topluluk',
-        'text' => 'Aynı dönemde olan annelerle güvenli şekilde bağ kur.',
-    ),
-    array(
-        'modifier' => 'assistant',
-        'icon' => 'fa-solid fa-robot',
-        'title' => 'AI rehberlik',
-        'text' => 'Kafa karışıklığını azaltan sakin bir destek katmanı.',
-    ),
-);
+$hero_image_url = 'https://momsy.com.tr/wp-content/uploads/2026/04/momsy-hamilelik-takip-uygulamasi.webp';
 
 $hero_metrics = array(
     array(
@@ -87,72 +68,17 @@ $hero_metrics = array(
         </div>
 
         <div class="hero-visual js-tilt" data-reveal="zoom">
-            <div class="hero-stage">
-                <div class="app-shell app-shell--hero">
-                    <div class="app-shell__notch"></div>
-                    <div class="app-shell__screen">
-                        <div class="app-shell__status">
-                            <span>09:41</span>
-                            <span>Momsy Live</span>
-                        </div>
-
-                        <div class="app-shell__hero-card">
-                            <span class="app-shell__hero-pill">Hafta 28 • Güvende ilerliyorsun</span>
-                            <h2>Bugünün akışı</h2>
-                            <p>Seni yormadan takip eden, nazikçe hatırlatan ve destek sunan teknoloji.</p>
-                        </div>
-
-                        <div class="app-shell__mini-grid">
-                            <article class="mini-panel mini-panel--rose">
-                                <span>Günlük his</span>
-                                <strong>Dengeli</strong>
-                                <small>Nefes, su ve dinlenme önerildi</small>
-                            </article>
-                            <article class="mini-panel mini-panel--violet">
-                                <span>Topluluk</span>
-                                <strong>+12 yeni paylaşım</strong>
-                                <small>Benzer haftadaki anneler aktif</small>
-                            </article>
-                        </div>
-
-                        <article class="app-shell__timeline-card">
-                            <div>
-                                <span class="label-soft">Partner senkronu</span>
-                                <strong>Akşam kontrol listesi hazır</strong>
-                            </div>
-                            <i class="fa-solid fa-link" aria-hidden="true"></i>
-                        </article>
-
-                        <div class="app-shell__list">
-                            <article>
-                                <i class="fa-solid fa-heart-circle-check" aria-hidden="true"></i>
-                                <div>
-                                    <strong>Semptom takibi</strong>
-                                    <span>Bugün yumuşak bir kontrol akışı açık</span>
-                                </div>
-                            </article>
-                            <article>
-                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
-                                <div>
-                                    <strong>Topluluk alanı</strong>
-                                    <span>“Benzer şeyleri yaşayan anneler burada.”</span>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-
-                <?php foreach ($hero_highlights as $highlight) : ?>
-                    <article class="floating-glass floating-glass--<?php echo esc_attr($highlight['modifier']); ?>">
-                        <span class="floating-glass__icon" aria-hidden="true">
-                            <i class="<?php echo esc_attr($highlight['icon']); ?>"></i>
-                        </span>
-                        <div>
-                            <strong><?php echo esc_html($highlight['title']); ?></strong>
-                            <p><?php echo esc_html($highlight['text']); ?></p>
-                        </div>
-                    </article>
-                <?php endforeach; ?>
+            <div class="hero-stage hero-stage--image">
+                <span class="hero-image-glow" aria-hidden="true"></span>
+                <figure class="hero-image-frame">
+                    <img
+                        class="hero-image"
+                        src="<?php echo esc_url($hero_image_url); ?>"
+                        alt="Momsy hamilelik takip uygulaması ekran görüntüsü"
+                        loading="eager"
+                        decoding="async"
+                    >
+                </figure>
             </div>
         </div>
     </div>
