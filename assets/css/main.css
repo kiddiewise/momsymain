@@ -597,6 +597,10 @@ ul {
     margin-top: 1.8rem;
 }
 
+.section--hero {
+    padding-top: clamp(2rem, 4vw, 4.5rem);
+}
+
 .hero-store-row {
     margin-top: 1.6rem;
     gap: 1rem;
@@ -1574,9 +1578,24 @@ ul {
         width: 100%;
     }
 
+    .section--hero {
+        padding-top: clamp(2rem, 4vw, 4rem);
+    }
+
+    .section--hero .hero-store-row,
+    .download-panel__actions {
+        justify-content: space-between;
+    }
+
+    .section--hero .hero-store-row .store-badge,
+    .download-panel__actions .store-badge {
+        width: calc(50% - 0.5rem);
+        min-width: 0;
+        flex: 0 1 calc(50% - 0.5rem);
+    }
+
     .section--hero .store-badge--hero {
         min-height: 6.25rem;
-        min-width: 100%;
         padding: 1rem 1.1rem;
     }
 
