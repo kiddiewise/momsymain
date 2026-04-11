@@ -7,35 +7,47 @@ $google_play_url = '#';
 $app_store_url = '#';
 ?>
 <section id="download" class="section section--final-cta" aria-labelledby="download-heading">
-    <div class="container section__inner">
-        <div class="final-cta">
-            <div class="final-cta__content">
-                <span class="section-label">İndirmeye Hazır</span>
-                <h2 id="download-heading" class="final-cta__title">Anlaşıldığını hissettiren bir topluluğa, sakin bir takibe ve güven veren rehberliğe tek adımda katıl.</h2>
-                <p class="section-copy final-cta__copy">Momsy; destek, topluluk, gebelik takibi ve yol gösterici rehberliği aynı akışta buluşturur. Anne ve anne adayları için tasarlanan bu deneyim, bugün sıcak bir toplulukla başlar; zamanla daha da güçlü bir destek ağına dönüşür.</p>
+    <div class="container">
+        <div class="download-panel" data-reveal="up">
+            <div class="download-panel__copy">
+                <span class="section-kicker">
+                    <i class="fa-solid fa-circle-down" aria-hidden="true"></i>
+                    İndirmeye hazır
+                </span>
+                <h2 id="download-heading" class="section-title">Topluluğa, sakin takibe ve modern app deneyimine tek dokunuşla katıl.</h2>
+                <p class="section-copy">Momsy’nin yeni ön yüzü artık sadece bilgi veren değil; gerçek ürün değeri gösteren, feminen ama güçlü, mobilde etkileyici ve store bağlantılarına yönlendiren tam bir uygulama vitrini olarak çalışıyor.</p>
 
-                <div class="button-group final-cta__actions">
-                    <a class="store-button store-button--filled" href="<?php echo esc_url($google_play_url); ?>" aria-label="Google Play'den indir">
+                <div class="download-panel__actions">
+                    <a class="store-badge store-badge--filled" href="<?php echo esc_url($google_play_url); ?>" aria-label="Google Play'den indir">
                         <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-                        <span class="store-button__content">
-                            <span class="store-button__eyebrow">Hemen indir</span>
-                            <span class="store-button__label">Google Play</span>
+                        <span class="store-badge__content">
+                            <span class="store-badge__eyebrow">Android için</span>
+                            <span class="store-badge__label">Google Play</span>
                         </span>
                     </a>
-                    <a class="store-button" href="<?php echo esc_url($app_store_url); ?>" aria-label="App Store'dan indir">
+                    <a class="store-badge" href="<?php echo esc_url($app_store_url); ?>" aria-label="App Store'dan indir">
                         <i class="fa-brands fa-app-store-ios" aria-hidden="true"></i>
-                        <span class="store-button__content">
-                            <span class="store-button__eyebrow">Hemen indir</span>
-                            <span class="store-button__label">App Store</span>
+                        <span class="store-badge__content">
+                            <span class="store-badge__eyebrow">iPhone için</span>
+                            <span class="store-badge__label">App Store</span>
                         </span>
                     </a>
                 </div>
             </div>
 
-            <div class="final-cta__meta">
-                <span class="final-cta__pill">Anne ve anne adayları için</span>
-                <span class="final-cta__pill">Topluluk odaklı destek</span>
-                <span class="final-cta__pill">Yakında daha fazla uzman desteği</span>
+            <div class="download-panel__meta">
+                <div class="download-stat">
+                    <span>Deneyim hissi</span>
+                    <strong>Premium, sıcak, mobile-first</strong>
+                </div>
+                <div class="download-stat">
+                    <span>Modüller</span>
+                    <strong>Topluluk • Takip • AI • Partner</strong>
+                </div>
+                <div class="download-stat">
+                    <span>Bir sonraki adım</span>
+                    <strong>Gerçek store linkleri ve ekran görselleri</strong>
+                </div>
             </div>
         </div>
     </div>

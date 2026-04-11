@@ -32,49 +32,65 @@ $expert_categories = array(
 );
 ?>
 <section id="experts" class="section section--experts-trust" aria-labelledby="experts-heading">
-    <div class="container section__inner experts-trust">
-        <div class="experts-trust__content">
-            <div class="experts-trust__eyebrow-row">
-                <span class="section-label">Uzman Destek Katmanı</span>
-                <span class="experts-badge">
-                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
-                    Yakında
-                </span>
+    <div class="container section-panel section-panel--experts">
+        <div class="showcase-layout showcase-layout--experts">
+            <div class="showcase-copy" data-reveal="up">
+                <div class="experts-header-row">
+                    <span class="section-kicker">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+                        Uzman destek katmanı
+                    </span>
+                    <span class="experts-badge">
+                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                        Yakında
+                    </span>
+                </div>
+
+                <h2 id="experts-heading" class="section-title">Topluluğun sıcaklığını korurken zamanla profesyonel rehberlikle güçlenecek bir yapı.</h2>
+                <p class="section-copy">Momsy’nin bugünkü kalbi toplulukta atıyor. İlerleyen sürüm yol haritasında doktor, doula, psikolog, emzirme danışmanı ve diyetisyen gibi uzmanlarla desteklenecek bir güven katmanı planlanıyor.</p>
+
+                <ul class="benefit-list benefit-list--compact" aria-label="Uzman destek yaklaşımı">
+                    <li class="benefit-list__item" data-reveal="up">
+                        <span class="benefit-list__icon" aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></span>
+                        <div>
+                            <strong>İkinci güven halkası</strong>
+                            <p>Topluluğu gölgelemeyen ama ihtiyaç anında profesyonel desteğe uzanan akış.</p>
+                        </div>
+                    </li>
+                    <li class="benefit-list__item" data-reveal="up">
+                        <span class="benefit-list__icon" aria-hidden="true"><i class="fa-solid fa-wave-square"></i></span>
+                        <div>
+                            <strong>Daha sakin kararlar</strong>
+                            <p>Kullanıcıyı yormayan, net şekilde yönlendiren bilgi katmanı.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <h2 id="experts-heading" class="experts-trust__title">Topluluğun sıcaklığını korurken, zamanla uzman rehberliğiyle daha da güçlenen bir deneyim.</h2>
-            <p class="section-copy experts-trust__copy">Momsy'nin bugünkü kalbi toplulukta atıyor. İlerleyen süreçte buna; doktor, doula, psikolog, emzirme danışmanı ve diyetisyen gibi uzmanlardan oluşacak dengeli bir destek katmanı eklenecek. Amaç; topluluğun samimiyetini korurken, ihtiyaç duyulan anlarda daha güvenli ve daha sürdürülebilir bir rehberlik sunmak.</p>
+            <div class="experts-panel" data-reveal="zoom">
+                <div class="experts-panel__header">
+                    <span class="label-soft">Planlanan kategoriler</span>
+                    <strong>Sağlık ve annelik sürecine profesyonel rehberlik katacak uzman alanları.</strong>
+                </div>
 
-            <ul class="experts-trust__list" aria-label="Uzman destek yaklaşımı">
-                <li>Topluluk odağını gölgelemeden, ihtiyaç halinde uzmanlığa uzanan ikinci bir güven katmanı kurulur.</li>
-                <li>Anne yolculuğunun farklı anlarında doğru uzmanlık alanına erişmek daha kolay hale gelir.</li>
-                <li>Hedef; daha sakin kararlar, daha güvenli yönlendirme ve uzun vadeli destek hissidir.</li>
-            </ul>
-        </div>
+                <div class="experts-grid">
+                    <?php foreach ($expert_categories as $category) : ?>
+                        <article class="expert-card">
+                            <span class="expert-card__icon" aria-hidden="true">
+                                <i class="<?php echo esc_attr($category['icon']); ?>"></i>
+                            </span>
+                            <h3 class="expert-card__title"><?php echo esc_html($category['title']); ?></h3>
+                            <p class="expert-card__text"><?php echo esc_html($category['text']); ?></p>
+                        </article>
+                    <?php endforeach; ?>
+                </div>
 
-        <div class="experts-panel">
-            <div class="experts-panel__header">
-                <span class="experts-panel__label">Planlanan kategoriler</span>
-                <p class="experts-panel__copy">Sağlık ve annelik sürecine profesyonel rehberlik katacak uzman alanları.</p>
-            </div>
-
-            <div class="experts-grid">
-                <?php foreach ($expert_categories as $category) : ?>
-                    <article class="expert-card">
-                        <span class="expert-card__icon" aria-hidden="true">
-                            <i class="<?php echo esc_attr($category['icon']); ?>"></i>
-                        </span>
-                        <h3 class="expert-card__title"><?php echo esc_html($category['title']); ?></h3>
-                        <p class="expert-card__text"><?php echo esc_html($category['text']); ?></p>
-                    </article>
-                <?php endforeach; ?>
-            </div>
-
-            <div class="experts-panel__footer">
-                <span class="experts-panel__trust">
-                    <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
-                    Sıcak ama profesyonel bir destek katmanı olarak tasarlanıyor.
-                </span>
+                <div class="experts-panel__footer">
+                    <span class="experts-panel__trust">
+                        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                        Sıcak ama profesyonel bir destek katmanı olarak tasarlanıyor.
+                    </span>
+                </div>
             </div>
         </div>
     </div>

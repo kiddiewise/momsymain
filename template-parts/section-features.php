@@ -5,83 +5,78 @@ if (!defined('ABSPATH')) {
 
 $features = array(
     array(
-        'icon' => 'fa-solid fa-square-plus',
-        'title' => 'Sosyal Paylaşım Akışı',
-        'description' => 'Instagram benzeri akışta güncellemelerini, duygularını ve günlük anlarını kolayca paylaş.',
-        'benefit' => 'Kendini ifade ederken yalnız hissetmez, aynı yoldan geçen annelerle doğal bağ kurarsın.',
-        'modifier' => 'wide',
+        'icon' => 'fa-solid fa-layer-group',
+        'label' => 'Tek akışta',
+        'title' => 'Topluluk, takip ve rehberlik aynı ürün mimarisinde birleşir.',
+        'description' => 'Kullanıcıyı ekranlar arasında kaybettirmeyen; her modülü birbiriyle konuşan, indirme isteği uyandıran bir ürün dili kurar.',
+        'modifier' => 'feature-tile--wide feature-tile--primary',
     ),
     array(
-        'icon' => 'fa-regular fa-paper-plane',
-        'title' => 'Direkt Mesajlar',
-        'description' => 'DM ile bire bir mesajlaş, daha özel soruları rahat ve güvenli bir alanda konuş.',
-        'benefit' => 'Hassas konularda kalabalığa açılmadan destek almanı kolaylaştırır.',
+        'icon' => 'fa-solid fa-comments',
+        'label' => 'Sıcak sosyal yapı',
+        'title' => 'Anne topluluğu',
+        'description' => 'Gerçek deneyimlerin paylaşıldığı, güvenli ve yorum odaklı akış.',
+        'modifier' => 'feature-tile--tall',
     ),
     array(
         'icon' => 'fa-solid fa-baby',
-        'title' => 'Hafta Hafta Gebelik Takibi',
-        'description' => 'Gebelik sürecini haftalık gelişim bilgileri, hatırlatmalar ve net bir ilerleyiş akışıyla izle.',
-        'benefit' => 'Belirsizlik azalır, her haftada ne olduğunu daha sakin ve kontrollü takip edersin.',
+        'label' => 'Düzenli görünüm',
+        'title' => 'Hafta hafta gebelik takibi',
+        'description' => 'Karmaşık sağlık verilerini yormayan, sade bir görsel dilde özetler.',
+        'modifier' => 'feature-tile--soft',
     ),
     array(
         'icon' => 'fa-solid fa-sparkles',
-        'title' => 'Momsy Asistan',
-        'description' => 'AI destekli asistanla aklındaki sorulara hızlı yanıt al, günlük kararlarını daha rahat ver.',
-        'benefit' => 'Doğru bilgiye hızla ulaşarak zihinsel yükünü hafifletir.',
+        'label' => 'Sakin teknoloji',
+        'title' => 'AI destekli rehberlik',
+        'description' => 'Panik üretmeden bilgi veren ve doğru adıma yönlendiren konuşma katmanı.',
+        'modifier' => 'feature-tile--accent',
     ),
     array(
-        'icon' => 'fa-solid fa-heart-circle-check',
-        'title' => 'Eşinle Ortak Takip',
-        'description' => 'Eşinle eşleşerek bebek gelişimini, notları ve önemli adımları aynı ekranda birlikte yönetin.',
-        'benefit' => 'Süreci tek başına taşımak yerine ebeveynlik yolculuğunu ortaklaştırır.',
+        'icon' => 'fa-solid fa-link',
+        'label' => 'Paylaşılan sorumluluk',
+        'title' => 'Partner senkronu',
+        'description' => 'Baba adayını da akışa dahil eden görev, not ve randevu paylaşımı.',
+        'modifier' => '',
     ),
     array(
-        'icon' => 'fa-solid fa-calendar-days',
-        'title' => 'Ortak Süreç Yönetimi',
-        'description' => 'Hastane randevuları, semptom kayıtları, doğum çantası ve hazırlık listeleri tek yerde toplansın.',
-        'benefit' => 'Küçük ama kritik detayları kaçırmadan günlük düzeni korumana yardım eder.',
+        'icon' => 'fa-solid fa-shield-heart',
+        'label' => 'Güven hissi',
+        'title' => 'Yumuşak ama güçlü arayüz',
+        'description' => 'Feminen dokunuşları kaybetmeden modern, premium ve app-first bir görünüm.',
+        'modifier' => '',
     ),
     array(
-        'icon' => 'fa-solid fa-user-group',
-        'title' => 'Topluluk Desteği ve Yorumlar',
-        'description' => 'Deneyim paylaşımları, yorumlar ve gerçek annelerden gelen geri bildirimlerle daha güçlü ilerle.',
-        'benefit' => 'Bilgiyi sadece okumaz, yaşayan insanlardan gelen güven duygusunu da hissedersin.',
+        'icon' => 'fa-solid fa-mobile-screen',
+        'label' => 'İndirme motivasyonu',
+        'title' => 'Store-ready vitrin',
+        'description' => 'Header’dan footer’a kadar uygulamanın gerçekten üretimde olduğu hissini verir.',
+        'modifier' => 'feature-tile--wide feature-tile--outline',
     ),
 );
 ?>
 <section id="features" class="section section--features" aria-labelledby="features-heading">
-    <div class="container section__inner">
-        <div class="features-intro">
-            <div class="features-intro__content">
-                <span class="section-label">Özellikler</span>
-                <h2 id="features-heading">Annelik yolculuğundaki her kritik ihtiyacı tek bir akışta birleştirir.</h2>
-                <p class="section-copy">Momsy; topluluktan takibe, AI desteğinden ortak ebeveynlik planlamasına kadar günlük ihtiyaçları sade ama güçlü bir deneyimde toplar.</p>
-            </div>
-
-            <aside class="features-highlight" aria-label="Temel değerler">
-                <span class="features-highlight__label">Tek uygulamada</span>
-                <p class="features-highlight__title">Topluluk, takip ve ortak planlama aynı merkezde buluşur.</p>
-                <p class="features-highlight__text">Kullanıcıya sadece araçlar değil; netlik, destek ve paylaşılan sorumluluk hissi verir.</p>
-            </aside>
+    <div class="container">
+        <div class="section-heading" data-reveal="up">
+            <span class="section-kicker">
+                <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>
+                Özellik mimarisi
+            </span>
+            <h2 id="features-heading" class="section-title">Momsy’nin ön yüzü artık basit bir landing değil; gerçek bir teknoloji ürününün vitrinine dönüşüyor.</h2>
+            <p class="section-copy">Bu bölümdeki bento kart yapısı, ürünün neden tek indirilebilir uygulama hissi verdiğini anlatıyor: daha düzenli alanlar, daha güçlü vurgu ve daha dengeli bir bilgi akışı.</p>
         </div>
 
         <div class="features-grid">
             <?php foreach ($features as $feature) : ?>
-                <?php
-                $card_classes = 'feature-card';
-                if (!empty($feature['modifier'])) {
-                    $card_classes .= ' feature-card--' . $feature['modifier'];
-                }
-                ?>
-                <article class="<?php echo esc_attr($card_classes); ?>">
-                    <span class="feature-card__icon" aria-hidden="true">
+                <article class="feature-tile <?php echo esc_attr($feature['modifier']); ?>" data-reveal="up">
+                    <span class="feature-tile__icon" aria-hidden="true">
                         <i class="<?php echo esc_attr($feature['icon']); ?>"></i>
                     </span>
-                    <div class="feature-card__body">
-                        <h3 class="feature-card__title"><?php echo esc_html($feature['title']); ?></h3>
-                        <p class="feature-card__description"><?php echo esc_html($feature['description']); ?></p>
+                    <div class="feature-tile__body">
+                        <span class="feature-tile__label"><?php echo esc_html($feature['label']); ?></span>
+                        <h3 class="feature-tile__title"><?php echo esc_html($feature['title']); ?></h3>
+                        <p class="feature-tile__description"><?php echo esc_html($feature['description']); ?></p>
                     </div>
-                    <p class="feature-card__benefit"><?php echo esc_html($feature['benefit']); ?></p>
                 </article>
             <?php endforeach; ?>
         </div>
