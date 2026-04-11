@@ -1595,22 +1595,25 @@ ul {
     }
 
     .section--hero .store-badge--hero {
-        min-height: 6.25rem;
-        padding: 1rem 1.1rem;
+        min-height: 4.75rem;
+        padding: 0.9rem 1rem;
     }
 
-    .section--hero .store-badge--hero i {
-        width: 3rem;
-        min-width: 3rem;
-        font-size: 2.2rem;
+    .section--hero .store-badge--hero .store-badge__icon {
+        width: 1.85rem;
+        height: 1.85rem;
+    }
+
+    .section--hero .store-badge--hero .store-badge__content {
+        gap: 0.08rem;
     }
 
     .section--hero .store-badge--hero .store-badge__eyebrow {
-        font-size: 0.72rem;
+        font-size: 0.68rem;
     }
 
     .section--hero .store-badge--hero .store-badge__label {
-        font-size: clamp(1.55rem, 8vw, 2rem);
+        font-size: clamp(1.3rem, 6vw, 1.65rem);
     }
 
     .hero-stage--image {
